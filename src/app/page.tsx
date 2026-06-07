@@ -72,10 +72,13 @@ function DashboardContent() {
         </div>
       </main>
       <footer className="border-t border-white/[0.05] py-4 px-6 text-center">
-        <p className="text-[11px] text-text-muted">
-          Seahowlks Topup Details · Professional Profit Settlement Dashboard
-          <span className="mx-2 opacity-30">·</span>All figures in USD
-        </p>
+          <p className="text-[11px] text-text-muted">
+            Seahowlks Topup Details · Professional Profit Settlement Dashboard
+            <span className="mx-2 opacity-30">·</span>
+            All figures in USD
+            <span className="mx-2 opacity-30">·</span>
+            Developed by <span className="text-primary font-medium">Parle</span>
+          </p>
       </footer>
     </div>
   );
