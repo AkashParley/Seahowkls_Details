@@ -131,8 +131,14 @@ export function TopupForm({ form, onReset, filledFieldsCount, totalRequiredField
               {...register("name")} className={`${inputBase} ${errors.name ? inputError : ""}`} />
           </FormField>
           <FormField id="shId" label="SH ID" required error={errors.shId?.message}>
-            <input id="shId" type="text" placeholder="e.g. SH-00123" autoComplete="off"
-              {...register("shId")} className={`${inputBase} ${errors.shId ? inputError : ""}`} />
+          <div className="flex">
+            <span className="flex items-center px-3 rounded-l-[10px] bg-white/[0.08] border border-r-0 border-white/[0.12] text-text-muted text-sm font-mono font-medium">
+              SHS
+            </span>
+            <input id="shId" type="text" placeholder="00123" autoComplete="off"
+              {...register("shId")}
+              className={`${inputBase} rounded-l-none ${errors.shId ? inputError : ""}`} />
+          </div>
           </FormField>
         </div>
 

@@ -54,7 +54,7 @@ export function buildSummaryText(summary: CalculatedSummary): string {
     `*TOPUP DETAILS*`,
     `*Name:* ${s.name}`,
     `*MT5:* ${s.mt5Number}`,
-    `*SH ID:* ${s.shId}`,
+    `*SH ID:* SHS${s.shId}`,
     `*Date:* ${s.depositDate || "—"}`,
     `*Deposit:* ${fmt(s.deposit)}`,
     `*Profit Share:* ${share}%`,

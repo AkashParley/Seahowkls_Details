@@ -107,7 +107,7 @@ export function SummaryCard({ summary }: SummaryCardProps) {
         <SummaryRow icon={<User size={11} className="text-primary" />} iconBg="rgba(99,102,241,0.18)" label="Name" value={summary.name} />
         <SummaryRow icon={<Hash size={11} className="text-secondary" />} iconBg="rgba(139,92,246,0.18)" label="MT5 Number" value={summary.mt5Number} />
         <SummaryRow icon={<CalendarDays size={11} className="text-sky-400" />} iconBg="rgba(56,189,248,0.18)" label="Deposit Date" value={summary.depositDate || "—"} />
-        <SummaryRow icon={<IdCard size={11} className="text-amber-400" />} iconBg="rgba(245,158,11,0.18)" label="SH ID" value={summary.shId} />
+        <SummaryRow icon={<IdCard size={11} className="text-amber-400" />} iconBg="rgba(245,158,11,0.18)" label="SH ID" value={summary.shId ? `SHS${summary.shId}` : "—"} />
 
         {/* Inputs */}
         <SectionLabel>Inputs</SectionLabel>
